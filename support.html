@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>支持 · Support — 相了个框 Frame It Up</title>
+<style>
+  :root { --bg:#f4faf6; --card:#ffffff; --fg:#1d2a23; --muted:#5f6f66; --accent:#2f8f5b; --line:#d8e9de; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#121815; --card:#1a221e; --fg:#e6efe9; --muted:#9db0a5; --accent:#5cc58a; --line:#2a3630; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Segoe UI", sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 20px 64px; }
+  header h1 { font-size:28px; margin:0 0 4px; }
+  header p { margin:0; color:var(--muted); }
+  nav { margin:20px 0 28px; display:flex; gap:12px; flex-wrap:wrap; }
+  nav a { color:var(--accent); text-decoration:none; border:1px solid var(--line); border-radius:999px; padding:4px 14px; background:var(--card); }
+  section { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:24px 24px 12px; margin-bottom:24px; }
+  h2 { font-size:21px; margin:0 0 12px; }
+  details { border-top:1px solid var(--line); padding:12px 0; }
+  details:first-of-type { border-top:none; }
+  summary { cursor:pointer; font-weight:600; }
+  details p, details li { margin:8px 0 0; }
+  ul { padding-left:20px; margin:0; }
+  .contact { font-size:17px; }
+  a { color:var(--accent); }
+  footer { color:var(--muted); font-size:14px; text-align:center; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>支持 · Support</h1>
+    <p>相了个框 · Frame It Up（iOS）</p>
+  </header>
+  <nav>
+    <a href="#zh">简体中文</a>
+    <a href="#en">English</a>
+    <a href="privacy-policy.html">隐私政策 Privacy</a>
+  </nav>
+
+  <section id="contact">
+    <h2>联系我们 · Contact</h2>
+    <p class="contact">✉ <a href="mailto:sunmoneys86@gmail.com">sunmoneys86@gmail.com</a></p>
+    <p>请写明机型、iOS 版本和问题出现的步骤，有截图更好。<br>
+       Please include your iPhone model, iOS version and the steps to reproduce. Screenshots help.</p>
+  </section>
+
+  <section id="zh" lang="zh-Hans">
+    <h2>常见问题</h2>
+
+    <details open>
+      <summary>隐私相册的入口不见了，怎么进去？</summary>
+      <p>你在设置里隐藏了入口。可以用设置好的手势进入，默认是<strong>长按底栏的「相册」约 1.5 秒</strong>（如果你改过手势，用你自己设置的那种）。</p>
+      <p>想恢复入口：相册页左上角齿轮 →「设置」→ 关闭「隐藏隐私相册入口」。</p>
+    </details>
+
+    <details>
+      <summary>忘记了隐私相册的密码怎么办？</summary>
+      <p>无法找回。密码只在你的手机上用来解开加密密钥，我们没有任何副本，也无法重置。忘记密码后，隐私相册里的照片和视频将无法打开。建议在设密码前，确认重要照片在别处另有备份。</p>
+    </details>
+
+    <details>
+      <summary>换手机或从备份恢复后，隐私相册打不开？</summary>
+      <p>隐私相册的密钥只保存在当前这台设备上，不会随 iCloud 或备份迁移。换机前，请先在隐私相册里把需要的照片恢复到系统相册。</p>
+    </details>
+
+    <details>
+      <summary>编辑好的照片保存到哪里？</summary>
+      <ul>
+        <li>编辑页顶部「保存」：保存编辑记录，留在 App 里，随时回来接着改；不会改动系统相册里的原图。</li>
+        <li>「导出」：生成一张新图片存进系统相册，可选 PNG 或 JPEG、长边 1080 / 2048 或原图尺寸。</li>
+        <li>九宫格可以导出一张整图，或切成 9 张按顺序存进系统相册。</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>导出失败或提示没有权限？</summary>
+      <p>请到 iOS「设置」→「相了个框」→「照片」，允许添加照片。</p>
+    </details>
+
+    <details>
+      <summary>相框上的机型、参数不对或是空的？</summary>
+      <p>这些信息来自照片自带的拍摄信息（EXIF）。截图、经过某些 App 处理的图片可能没有这些信息。每个字段都可以在「相框」面板里手动修改。</p>
+    </details>
+
+    <details>
+      <summary>App 会上传我的照片吗？</summary>
+      <p>不会。App 不上传照片、不登录、不收集任何数据。详见 <a href="privacy-policy.html">隐私政策</a>。</p>
+    </details>
+    <details>
+      <summary>换了手机，Pro 怎么找回？</summary>
+      <p>用同一个 Apple ID 登录，打开 设置 → 相了个框 Pro → 恢复购买。</p>
+    </details>
+    <details>
+      <summary>怎么取消订阅？</summary>
+      <p>打开 iPhone 的「设置」→ 顶部你的名字 → 订阅 → 相了个框，选择取消。也可以在 App 的 设置 → 相了个框 Pro → 管理订阅 里进入。取消后到期前仍可使用 Pro。</p>
+    </details>
+  </section>
+
+  <section id="en" lang="en">
+    <h2>FAQ</h2>
+    <p>The app's interface is in Chinese in version 1.0. Button names below are given in Chinese with English in brackets.</p>
+
+    <details open>
+      <summary>The private album entry is gone. How do I get in?</summary>
+      <p>You hid the entry in Settings. Use the gesture you set; the default is to <strong>long-press 「相册」 (Album) in the bottom bar for about 1.5 seconds</strong>.</p>
+      <p>To show the entry again: gear icon at the top left of the album → 「设置」 (Settings) → turn off 「隐藏隐私相册入口」 (Hide private album entry).</p>
+    </details>
+
+    <details>
+      <summary>I forgot my private album passcode.</summary>
+      <p>It cannot be recovered. The passcode only unlocks the encryption key on your phone; we have no copy and cannot reset it. Without it, the photos and videos in the private album cannot be opened.</p>
+    </details>
+
+    <details>
+      <summary>The private album won't open after moving to a new phone or restoring a backup.</summary>
+      <p>The album's key stays on the original device and is not moved by iCloud or backups. Before switching phones, restore the photos you need from the private album to your library.</p>
+    </details>
+
+    <details>
+      <summary>Where do my edits go?</summary>
+      <ul>
+        <li>「保存」 (Save) at the top of the editor keeps your edits in the app so you can continue later. Your original in the photo library is not changed.</li>
+        <li>「导出」 (Export) saves a new image to your library: PNG or JPEG, long edge 1080 / 2048 or original size.</li>
+        <li>The 3×3 grid exports as one image or as 9 tiles saved in order.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Export fails or says there is no permission.</summary>
+      <p>Go to iOS Settings → 相了个框 → Photos and allow adding photos.</p>
+    </details>
+
+    <details>
+      <summary>The camera or settings on the frame are wrong or empty.</summary>
+      <p>They come from the photo's EXIF data. Screenshots and images processed by some apps may not have it. Every field can be edited in the frame panel.</p>
+    </details>
+
+    <details>
+      <summary>Does the app upload my photos?</summary>
+      <p>No. The app uploads nothing, has no account and collects no data. See the <a href="privacy-policy.html">privacy policy</a>.</p>
+    </details>
+    <details>
+      <summary>How do I get Pro back on a new iPhone?</summary>
+      <p>Sign in with the same Apple ID, then open Settings → Frame It Up Pro → Restore Purchases in the app.</p>
+    </details>
+    <details>
+      <summary>How do I cancel my subscription?</summary>
+      <p>Open the iPhone Settings app → your name → Subscriptions → Frame It Up, and cancel. You can also get there from Settings → Frame It Up Pro → Manage Subscription in the app. Pro stays active until the end of the current period.</p>
+    </details>
+  </section>
+
+  <footer>© 2026 guohua zhu</footer>
+</main>
+</body>
+</html>
